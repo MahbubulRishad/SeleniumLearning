@@ -27,6 +27,10 @@ public class InteractingWebElements {
 
 //        sendKeys() method -- passing value in that respect area
         webDriver.findElement(By.name("username")).sendKeys("ABCXYZ");
+//        System.out.println(webDriver.findElement(By.name("username")).getAttribute("username"));
+
+//        getting value from any specific tag/area
+        System.out.println(webDriver.findElement(By.linkText("Services")).getAttribute("href"));
 
 //        clear() method -- clear value from input area
         webDriver.findElement(By.name("password")).sendKeys("123456");
